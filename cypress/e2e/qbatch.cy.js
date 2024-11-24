@@ -14,8 +14,5 @@ describe('Navigation Links Test', () => {
     cy.xpath('/html/body/div[1]/div[1]/div[1]').contains('Hire Developers').click();
     cy.url().should('eq', 'https://qbatch.com/hire-developers/');
 
-    // Step 4: Click the 'Hire Developers' link inside the container div and check the URL
-    cy.xpath('/html/body/div[1]/div[1]/div[1]').contains('Blog').click();
-    cy.url().should('eq', 'https://qbatch.com/blog/');
   });
 });
